@@ -1,8 +1,10 @@
+// Flowchart: https://www.figma.com/file/fuU3AbRiQ9T95folpCh482/6-criptograph?node-id=0%3A1&t=0lzLQSdLPZrVZuj8-1
+
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const numbersOfAlphabet = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
-  23, 24, 25, 29,
+  23, 24, 25, 26,
 ];
 
 function encrypt(lettersToEncrypt) {
@@ -23,11 +25,9 @@ function encrypt(lettersToEncrypt) {
   return encryptParts.join(" ");
 }
 
-console.log(encrypt("ZUJS LQOS"));
-
 function decrypt(numberToDecrypt) {
   const set = numberToDecrypt.split(" ");
-  const encryptParts = [];
+  const decryptParts = [];
 
   set.forEach((numbers) => {
     const number = numbers.split(".").join("");
@@ -38,10 +38,11 @@ function decrypt(numberToDecrypt) {
         part.push(alphabet[number[i] - 1]);
       }
     }
-    encryptParts.push(part.join(""));
+    decryptParts.push(part.join(""));
   });
 
-  return encryptParts.join(" ");
+  return decryptParts.join(" ");
 }
 
+console.log(encrypt("ZUJSABOS"));
 console.log(decrypt("1.2.2.4 1.3.4.3"));

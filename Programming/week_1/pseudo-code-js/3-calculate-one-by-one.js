@@ -1,3 +1,5 @@
+// Flowchart: https://www.figma.com/file/LlURz3lqWaw4GH70rQzEQT/3-calculate-one-by-one?node-id=0%3A1&t=l6KlyV8u8eqITeHg-1
+
 const hundred = 100;
 
 function sumNumbers(value) {

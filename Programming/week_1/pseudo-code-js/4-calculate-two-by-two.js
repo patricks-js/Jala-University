@@ -1,3 +1,5 @@
+// Flowchart: https://www.figma.com/file/YkyJiRxqH7Q6prjE3ZYcpl/4-calculate-two-by-two?node-id=0%3A1&t=wQnFuZt8GnXm34jL-1
+
 const hundred = 100;
 
 function sumNumbers(value) {
