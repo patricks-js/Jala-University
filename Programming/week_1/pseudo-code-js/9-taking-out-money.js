@@ -1,3 +1,5 @@
+// Flowchart: https://www.figma.com/file/2mzWeogyCAwLresPKp66Jj/9-taking-out-money?node-id=0%3A1&t=j7T8pr6uy0yoHWJz-1
+
 let balance = 1000;
 
 let amountToBeWithdrawn = 45;
