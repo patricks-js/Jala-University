@@ -1,10 +1,18 @@
-// const number = 7;
+// Flowchart: https://www.figma.com/file/jwoopScUNieMYOHLe8Qi9H/5-prime-number?node-id=0%3A1&t=aXyYhBOu2cHuMNhS-1
 
-const res = [];
-for (let i = 1; i < 100 + 1; i++) {
-  if (i % i > 0) {
-    res.push(i);
+function isPrime(value) {
+  let dividers = 0;
+
+  for (let i = 1; i <= value; i++) {
+    if (value % i === 0) {
+      dividers += 1;
+    }
   }
+
+  if (dividers > 2) {
+    return `${value} not is prime`;
+  }
+  return `${value} is prime`;
 }
 
-console.log(res);
+console.log(isPrime(9));

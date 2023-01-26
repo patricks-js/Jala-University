@@ -1,10 +1,10 @@
-// Flowchart:
+// Flowchart: https://www.figma.com/file/FX5G40m5rezhFDvrkTyIdf/1-binary-to-decimal?node-id=0%3A1&t=b7U1dNzNp8R63yBU-1
 
 const binaryNumber = 1010010;
 const decimalNumber = 5;
 
 function binaryToDecimal(value) {
-  const binary = JSON.stringify(value);
+  const binary = String(value);
 
   let decimal = 0;
   for (let i = 0; i < binary.length; i++) {
