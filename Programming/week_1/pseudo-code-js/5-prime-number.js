@@ -9,7 +9,7 @@ function isPrime(value) {
     }
   }
 
-  if (dividers > 2) {
+  if (dividers > 2 || value == 1) {
     return `${value} not is prime`;
   }
   return `${value} is prime`;
