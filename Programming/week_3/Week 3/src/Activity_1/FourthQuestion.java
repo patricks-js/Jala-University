@@ -8,6 +8,7 @@ public class FourthQuestion {
 
         int[] numbers = new int[20];
         int numberFound = 0;
+        boolean found = false;
 
         for(int i = 0; i < numbers.length; i++) {
             System.out.print("Enter the value " + (i + 1) + ": ");
@@ -20,9 +21,12 @@ public class FourthQuestion {
         for(int i = 0; i < numbers.length; i++) {
             if(numbers[i] == numberToFind) {
                 numberFound = i;
+                found = true;
+                System.out.println("The number " + numberToFind + " is in the position " + (numberFound + 1));
+                break;
             }
         }
 
-        System.out.println("The number " + numberToFind + " is in the position " + (numberFound + 1));
+        if(!found) System.out.println("Number not found!");
     }
 }

@@ -8,6 +8,7 @@ public class ThirdQuestion {
         Scanner keyboardInput = new Scanner(System.in);
 
         int[] numbers = new int[16];
+        int[] reverseNumbers = new int[16];
 
         for(int i = 0; i < numbers.length; i++) {
             System.out.print("Enter the value " + (i + 1) + ": ");
@@ -25,6 +26,12 @@ public class ThirdQuestion {
             }
         }
 
-        System.out.println(Arrays.toString(lastEight) + Arrays.toString(firstEight));
+        System.arraycopy(lastEight, 0, reverseNumbers, 0, numbers.length / 2);
+
+        for(int i = (numbers.length / 2), j = 0; i < numbers.length; i++, j++) {
+            reverseNumbers[i] = firstEight[j];
+        }
+
+        System.out.println(Arrays.toString(reverseNumbers));
     }
 }
